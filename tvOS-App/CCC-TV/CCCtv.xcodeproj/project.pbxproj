@@ -51,9 +51,6 @@
 		01A00E761C1F137F007CB351 /* Conference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0187C2211C1A21A5007CB351 /* Conference.swift */; };
 		01ADD2CF1C240FFF007CB351 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0187C21F1C1A2055007CB351 /* Event.swift */; };
 		01B5D8F81BD66CF5007CB351 /* SettingsExport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B5D8F71BD66CF5007CB351 /* SettingsExport.swift */; };
-		1605CE6623C9D22300BA9161 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1605CE6223C9D18200BA9161 /* SwiftyJSON.framework */; };
-		1605CE6723C9D22300BA9161 /* SwiftyJSON.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1605CE6223C9D18200BA9161 /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		1635336023C9DA6C00403F93 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1605CE6223C9D18200BA9161 /* SwiftyJSON.framework */; };
 		1635336723C9DC7000403F93 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1635336623C9DC7000403F93 /* SwiftyJSON.framework */; };
 		1635336823C9DC7000403F93 /* SwiftyJSON.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1635336623C9DC7000403F93 /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
@@ -82,7 +79,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				1605CE6723C9D22300BA9161 /* SwiftyJSON.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -126,7 +122,6 @@
 		0187C2261C1A27AA007CB351 /* Downloader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Downloader.swift; path = NetworkOperations/Downloader.swift; sourceTree = "<group>"; };
 		01A00E721C1DB86D007CB351 /* DownloaderTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DownloaderTests.swift; path = NetworkOperations/DownloaderTests.swift; sourceTree = "<group>"; };
 		01B5D8F71BD66CF5007CB351 /* SettingsExport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingsExport.swift; path = Exports/SettingsExport.swift; sourceTree = "<group>"; };
-		1605CE6223C9D18200BA9161 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = ../Carthage/Build/tvOS/SwiftyJSON.framework; sourceTree = "<group>"; };
 		1635336623C9DC7000403F93 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/tvOS/SwiftyJSON.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -135,7 +130,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1605CE6623C9D22300BA9161 /* SwiftyJSON.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,7 +145,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1635336023C9DA6C00403F93 /* SwiftyJSON.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,7 +276,6 @@
 			isa = PBXGroup;
 			children = (
 				1635336623C9DC7000403F93 /* SwiftyJSON.framework */,
-				1605CE6223C9D18200BA9161 /* SwiftyJSON.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
