@@ -55,7 +55,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, TVApplicationControllerDe
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         window = UIWindow(frame: UIScreen.main.bounds)
-        print("Build: \(build) Versin: \(version)")
+        print("Build: \(build) Versin: \(NSObject.version)")
         print("URL: \(AppDelegate.TVBaseURL)")
         
         /*
