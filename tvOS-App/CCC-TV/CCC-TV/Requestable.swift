@@ -17,7 +17,7 @@ enum RequestError {
     case MissingContextError
 }
 
-protocol Requestable {
+protocol Requestable : class {
     var jsonData: JSON { get set }
     var requestUrl: String { get }
     
@@ -27,27 +27,23 @@ protocol Requestable {
 
 extension Requestable {
     
-    mutating func performRequest(completionHandler: @escaping (RequestError?, JSON?)->()) {
+    func performRequest(completionHandler: @escaping (RequestError?, JSON?)->()) {
         let url = NSURL(string: "\(apiUrl)\(requestUrl)")
         
         let configuration = URLSessionConfiguration.default
         
         let request = URLRequest(url: url! as URL)
         
-        let session = URLSession(
-            configuration: configuration
-            , delegate: SessionDelegate()
-            , delegateQueue: OperationQueue.main
-        )
+        let session = URLSession(configuration: configuration)
         
         let task = session.dataTask(with: request) {
-            (data: NSData?, response: URLResponse?, error: NSError?) -> Void in
+            (data: Data?, response: URLResponse?, error: Error?) -> Void in
             
             if error != nil {
                 NSLog(error!.localizedDescription)
                 completionHandler( RequestError.RequestError, nil)
             } else {
-                let json = JSON(data: data!)
+                let json = try! JSON(data: data!)
                 if json.error != nil {
                     NSLog(json.error!.localizedDescription)
                     completionHandler(RequestError.JsonError, nil)
@@ -61,23 +57,3 @@ extension Requestable {
     }
     
 }
-
-class SessionDelegate: NSObject, URLSessionDelegate, URLSessionTaskDelegate {
-    
-    func URLSession(session: URLSession, task: NSURLSessionTask, didReceiveChallenge challenge: URLAuthenticationChallenge, completionHandler: (NSURLSessionAuthChallengeDisposition, NSURLCredential?) -> Void) {
-        if let trust = challenge.protectionSpace.serverTrust {
-            completionHandler(
-                NSURLSessionAuthChallengeDisposition.UseCredential
-                , NSURLCredential(forTrust: trust)
-            )
-        } else {
-            completionHandler(NSURLSessionAuthChallengeDisposition.UseCredential, nil)
-        }
-    }
-    
-    func URLSession(session: URLSession, task: URLSessionTask, willPerformHTTPRedirection response: NSHTTPURLResponse, newRequest request: NSURLRequest, completionHandler: (NSURLRequest?) -> Void) {
-        let newRequest : NSURLRequest? = request
-        completionHandler(newRequest)
-    }
-}
-

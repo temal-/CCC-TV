@@ -21,21 +21,39 @@ class ConferencesExport: NSObject, ConferencesExportProtocol {
     let downloader = Downloader()
 
     private func conferenceStructToObject() -> Array<Dictionary<String, String>> {
-        return allConferences.map(){(conference: Conference) -> Dictionary<String, String> in
-            return Dictionary(dictionaryLiteral:
-                ("title", conference.title)
-                , ("acronym", conference.acronym)
-                , ("logo_url", conference.logo_url.absoluteString)
-                , ("updated_at", DateFormatter.localizedStringFromDate(conference.updated_at as Date, dateStyle: .mediumStyle, timeStyle: .mediumStyle) )
-                , ("aspect_ratio", conference.aspect_ratio)
-                , ("schedule_url", conference.schedule_url.absoluteString)
-                , ("images_url", conference.images_url.absoluteString)
-                , ("recordings_url", (conference.recordings_url?.absoluteString) ?? "")
-                , ("webgen_location", conference.webgen_location)
-                , ("slug", conference.slug)
-                , ("url", conference.url.absoluteString)
+        var result: Array<Dictionary<String, String>>  = []
+        for conference in allConferences {
+            // Create variables beforehand to speed up type-check of compiler
+            let title = conference.title
+            let acronym = conference.acronym
+            let logo_url = conference.logo_url.absoluteString
+            let updated_at = DateFormatter.localizedString(from: conference.updated_at as Date, dateStyle: .medium, timeStyle: .medium)
+            let aspect_ratio = conference.aspect_ratio
+            let schedule_url = conference.schedule_url.absoluteString
+            let images_url = conference.images_url.absoluteString
+            let recordings_url = (conference.recordings_url?.absoluteString) ?? ""
+            let webgen_location = conference.webgen_location
+            let slug = conference.slug
+            let url = conference.url.absoluteString
+
+            result.append(
+                Dictionary(dictionaryLiteral:
+                    ("title", title),
+                    ("acronym", acronym),
+                    ("logo_url", logo_url),
+                    ("updated_at", updated_at),
+                    ("aspect_ratio", aspect_ratio),
+                    ("schedule_url", schedule_url),
+                    ("images_url", images_url),
+                    ("recordings_url", recordings_url),
+                    ("webgen_location", webgen_location),
+                    ("slug", slug),
+                    ("url", url)
+                ) as! [String : String]
             )
         }
+
+        return result
     }
     
     private func eventStructToObject(withEventId eventId: Int) -> Array<Dictionary<String, String>> {
@@ -43,26 +61,46 @@ class ConferencesExport: NSObject, ConferencesExportProtocol {
         let eventList = allEvents[eventId]
         if let eventList = eventList {
         for event in eventList {
+            // Create variables beforehand to speed up type-check of compiler
+            let title = event.title
+            let subtitle =  event.subtitle
+            let description =  event.description
+            let length =  "\(event.length)"
+            let tags =  event.tags.joined(separator: ",")
+            let persons =  event.tags.joined(separator: ",")
+            let slug =  event.slug
+            let guid =  event.guid
+            let url =  event.url.absoluteString
+            let link =  (event.link?.absoluteString) ?? ""
+            let frontend_link =  (event.frontend_link?.absoluteString) ?? ""
+            let date =  DateFormatter.localizedString(from: (event.date ) as Date, dateStyle: .medium, timeStyle: .medium)
+            let release_date =  DateFormatter.localizedString(from: (event.release_date ?? NSDate()) as Date, dateStyle: .medium, timeStyle: .medium)
+            let updated_at =  DateFormatter.localizedString(from: event.updated_at! as Date, dateStyle: .medium, timeStyle: .medium)
+            let poster_url =  (event.poster_url?.absoluteString) ?? ""
+            let thumb_url =  (event.thumb_url?.absoluteString) ?? ""
+            let conference_url =  (event.conference_url?.absoluteString) ?? ""
+
             result.append(
                 Dictionary(dictionaryLiteral:
-                      ("title", event.title)
-                    , ("subtitle", event.subtitle)
-                    , ("description", event.description)
-                    , ("length", "\(event.length)")
-                    , ("tags", event.tags.joinWithSeparator(","))
-                    , ("persons", event.tags.joinWithSeparator(","))
-                    , ("slug", event.slug)
-                    , ("guid", event.guid)
-                    , ("url", event.url.absoluteString)
-                    , ("link", (event.link?.absoluteString) ?? "")
-                    , ("frontend_link", (event.frontend_link?.absoluteString) ?? "")
-                    , ("date", DateFormatter.localizedStringFromDate(event.date ?? NSDate(), dateStyle: .MediumStyle, timeStyle: .MediumStyle) )
-                    , ("release_date", DateFormatter.localizedStringFromDate(event.release_date ?? NSDate(), dateStyle: .MediumStyle, timeStyle: .MediumStyle) )
-                    , ("updated_at", DateFormatter.localizedStringFromDate(event.updated_at!, dateStyle: .MediumStyle, timeStyle: .MediumStyle) )
-                    , ("poster_url", (event.poster_url?.absoluteString) ?? "")
-                    , ("thumb_url", (event.thumb_url?.absoluteString) ?? "")
-                    , ("conference_url", (event.conference_url?.absoluteString) ?? "")
-                ))
+                    ("title", title),
+                    ("subtitle", subtitle),
+                    ("description", description),
+                    ("length", length),
+                    ("tags", tags),
+                    ("persons", persons),
+                    ("slug", slug),
+                    ("guid", guid),
+                    ("url", url ?? ""),
+                    ("link", link),
+                    ("frontend_link", frontend_link),
+                    ("date", date),
+                    ("release_date", release_date),
+                    ("updated_at", updated_at),
+                    ("poster_url", poster_url),
+                    ("thumb_url", thumb_url),
+                    ("conference_url", conference_url)
+                )
+            )
         }
         }
         return result
@@ -99,7 +137,7 @@ class ConferencesExport: NSObject, ConferencesExportProtocol {
                 let events = self.eventStructToObject(withEventId: Int(id as String)!)
                 
                 NSLog("events length \(events.count)");
-                fn.callWithArguments(events)
+                fn.call(withArguments: events)
                 //globalJsContext?.evaluateScript("Presenter.addVideoItem("+(id as String)+");")
             }
             downloadQueue.addOperation(eventsDownloader)

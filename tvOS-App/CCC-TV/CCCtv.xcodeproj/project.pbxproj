@@ -51,10 +51,6 @@
 		01A00E761C1F137F007CB351 /* Conference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0187C2211C1A21A5007CB351 /* Conference.swift */; };
 		01ADD2CF1C240FFF007CB351 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0187C21F1C1A2055007CB351 /* Event.swift */; };
 		01B5D8F81BD66CF5007CB351 /* SettingsExport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B5D8F71BD66CF5007CB351 /* SettingsExport.swift */; };
-		736AFF2B7681CF32D6FA60E0 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BB5CABC2D9301F2CE977FC8 /* Pods.framework */; };
-		8635D24AC3C9ABF3BDE7FF74 /* Pods_CCCtv.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EABE87323B5EF6162983383 /* Pods_CCCtv.framework */; };
-		98FE7435E6F39C9263F733E2 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BB5CABC2D9301F2CE977FC8 /* Pods.framework */; };
-		DA38055B281D1D832D9A6CB5 /* Pods_CCCtv_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6D41729F2960DF86260B1CD /* Pods_CCCtv_Tests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,14 +96,10 @@
 		0187C2261C1A27AA007CB351 /* Downloader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Downloader.swift; path = NetworkOperations/Downloader.swift; sourceTree = "<group>"; };
 		01A00E721C1DB86D007CB351 /* DownloaderTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DownloaderTests.swift; path = NetworkOperations/DownloaderTests.swift; sourceTree = "<group>"; };
 		01B5D8F71BD66CF5007CB351 /* SettingsExport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingsExport.swift; path = Exports/SettingsExport.swift; sourceTree = "<group>"; };
-		0EABE87323B5EF6162983383 /* Pods_CCCtv.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CCCtv.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1778DAFC999F1ED12F119386 /* Pods-CCCtv.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CCCtv.release.xcconfig"; path = "../Pods/Target Support Files/Pods-CCCtv/Pods-CCCtv.release.xcconfig"; sourceTree = "<group>"; };
-		1780066D4B2E2DDD6165CF14 /* Pods_CCCtv__Production_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CCCtv__Production_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1BB5CABC2D9301F2CE977FC8 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FC4D1C2EF77D5B2D30A540A /* Pods-CCCtv-Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CCCtv-Tests.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-CCCtv-Tests/Pods-CCCtv-Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		6B20274B6B2E446B30B7A1DF /* Pods-CCCtv-Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CCCtv-Tests.release.xcconfig"; path = "../Pods/Target Support Files/Pods-CCCtv-Tests/Pods-CCCtv-Tests.release.xcconfig"; sourceTree = "<group>"; };
 		93F5A8B3B131436CED73BDA9 /* Pods-CCCtv.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CCCtv.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-CCCtv/Pods-CCCtv.debug.xcconfig"; sourceTree = "<group>"; };
-		F6D41729F2960DF86260B1CD /* Pods_CCCtv_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CCCtv_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,8 +114,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				736AFF2B7681CF32D6FA60E0 /* Pods.framework in Frameworks */,
-				8635D24AC3C9ABF3BDE7FF74 /* Pods_CCCtv.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,8 +121,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				98FE7435E6F39C9263F733E2 /* Pods.framework in Frameworks */,
-				DA38055B281D1D832D9A6CB5 /* Pods_CCCtv_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,10 +263,6 @@
 		780357042C6BA944CACAAF59 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				1BB5CABC2D9301F2CE977FC8 /* Pods.framework */,
-				0EABE87323B5EF6162983383 /* Pods_CCCtv.framework */,
-				F6D41729F2960DF86260B1CD /* Pods_CCCtv_Tests.framework */,
-				1780066D4B2E2DDD6165CF14 /* Pods_CCCtv__Production_.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

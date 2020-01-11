@@ -13,10 +13,10 @@ class DownloadConferencesOperation: Operation {
 
     private var _finished: Bool = false {
         willSet {
-            self.willChangeValueForKey("isFinished");
+            self.willChangeValue(forKey: "isFinished");
         }
         didSet {
-            self.didChangeValueForKey("isFinished");
+            self.didChangeValue(forKey: "isFinished");
         }
     }
     override var isFinished: Bool {
@@ -32,7 +32,7 @@ class DownloadConferencesOperation: Operation {
     }
     
     override func main() {
-        var conferencesRequest = ConferencesRequest()
+        let conferencesRequest = ConferencesRequest()
         conferencesRequest.performRequest(){
             (err: RequestError?, data: JSON?)->() in
             
@@ -47,7 +47,7 @@ class DownloadConferencesOperation: Operation {
                           title: subJson["title"].stringValue
                         , acronym: subJson["acronym"].stringValue
                         , logo_url: NSURL(string: subJson["logo_url"].stringValue)!
-                        , updated_at: self.dateFormatter.dateFromString(subJson["updated_at"].stringValue)! as NSDate
+                        , updated_at: self.dateFormatter.date(from: subJson["updated_at"].stringValue)! as NSDate
                         , aspect_ratio: subJson["aspect_ratio"].stringValue
                         , schedule_url: NSURL(string: subJson["schedule_url"].stringValue)!
                         , images_url: NSURL(string: subJson["images_url"].stringValue)!
@@ -59,7 +59,7 @@ class DownloadConferencesOperation: Operation {
                     allConferences.append(conference)
                 }
             }
-            allConferences.sortInPlace({ $0.updated_at.compare($1.updated_at) == ComparisonResultrderedDescending })
+            allConferences.sort(by: { $0.updated_at.compare($1.updated_at as Date) == ComparisonResult.orderedDescending })
             
             self._finished = true
         }

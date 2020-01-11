@@ -30,7 +30,7 @@ class EventsRequest: Requestable {
             if self._json != nil {
                 return _json!
             }
-            return JSON(data: "{}".data(usingEncoding: NSUTF8StringEncoding)!)
+            return JSON.init(arrayLiteral: [])
         }
         set(newJson) {
             self._json = newJson

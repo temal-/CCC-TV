@@ -35,7 +35,7 @@ class DownloadEventsOperation: Operation {
     }
     
     override func main() {
-        var eventsRequest = EventsRequest(eventid: eventId)
+        let eventsRequest = EventsRequest(eventid: eventId)
         eventsRequest.performRequest(){
             (err: RequestError?, data: JSON?)->() in
             
