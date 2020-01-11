@@ -7,53 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		01017D171C1F37FF007CB351 /* ConferencesExport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01017D161C1F37FF007CB351 /* ConferencesExport.swift */; };
-		01017D191C1F3ECE007CB351 /* LogExporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01017D181C1F3ECE007CB351 /* LogExporter.swift */; };
-		010A4ADF1C246B25007CB351 /* LogExporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01017D181C1F3ECE007CB351 /* LogExporter.swift */; };
-		010A4AE01C246B25007CB351 /* ConferencesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0182E2F81C1DAE58007CB351 /* ConferencesRequest.swift */; };
-		010A4AE11C246B25007CB351 /* ConferencesExport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01017D161C1F37FF007CB351 /* ConferencesExport.swift */; };
 		010A4AE21C246B25007CB351 /* CensoredEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010F19121C241D8D007CB351 /* CensoredEvents.swift */; };
 		010A4AE31C246B25007CB351 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0187C21F1C1A2055007CB351 /* Event.swift */; };
-		010A4AE41C246B25007CB351 /* Requestable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0182E2F51C1DAC34007CB351 /* Requestable.swift */; };
-		010A4AE51C246B25007CB351 /* Downloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0187C2261C1A27AA007CB351 /* Downloader.swift */; };
-		010A4AE61C246B25007CB351 /* DownloadConferencesOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0187C2241C1A22C9007CB351 /* DownloadConferencesOperation.swift */; };
 		010A4AE71C246B25007CB351 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010BAB5D1BCC7032007CB351 /* AppDelegate.swift */; };
-		010A4AE81C246B25007CB351 /* EventsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01489CD11C21B2DD007CB351 /* EventsRequest.swift */; };
 		010A4AE91C246B25007CB351 /* Conference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0187C2211C1A21A5007CB351 /* Conference.swift */; };
-		010A4AEA1C246B25007CB351 /* SettingsExport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B5D8F71BD66CF5007CB351 /* SettingsExport.swift */; };
-		010A4AEC1C246B25007CB351 /* DownloadEventsOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01489CD61C21B871007CB351 /* DownloadEventsOperation.swift */; };
 		010A4AF01C246B25007CB351 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 010BAB671BCC7032007CB351 /* Assets.xcassets */; };
 		010BAB5E1BCC7032007CB351 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010BAB5D1BCC7032007CB351 /* AppDelegate.swift */; };
 		010BAB681BCC7032007CB351 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 010BAB671BCC7032007CB351 /* Assets.xcassets */; };
 		010F19131C241D8D007CB351 /* CensoredEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010F19121C241D8D007CB351 /* CensoredEvents.swift */; };
-		0141D7CF1C1A1AE3007CB351 /* SettingsExport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B5D8F71BD66CF5007CB351 /* SettingsExport.swift */; };
-		01489CD21C21B2DD007CB351 /* EventsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01489CD11C21B2DD007CB351 /* EventsRequest.swift */; };
-		01489CD31C21B2DD007CB351 /* EventsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01489CD11C21B2DD007CB351 /* EventsRequest.swift */; };
 		01489CD51C21B797007CB351 /* EventsRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01489CD41C21B797007CB351 /* EventsRequestTests.swift */; };
-		01489CD71C21B871007CB351 /* DownloadEventsOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01489CD61C21B871007CB351 /* DownloadEventsOperation.swift */; };
-		01489CD81C21B871007CB351 /* DownloadEventsOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01489CD61C21B871007CB351 /* DownloadEventsOperation.swift */; };
 		01733F4E1C1A1425007CB351 /* CCC_TV_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01733F4D1C1A1425007CB351 /* CCC_TV_Tests.swift */; };
 		01733F571C1A185A007CB351 /* SettingsExportTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01733F561C1A185A007CB351 /* SettingsExportTest.swift */; };
-		0182E2F61C1DAC34007CB351 /* Requestable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0182E2F51C1DAC34007CB351 /* Requestable.swift */; };
-		0182E2F91C1DAE58007CB351 /* ConferencesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0182E2F81C1DAE58007CB351 /* ConferencesRequest.swift */; };
 		0182E2FD1C1DB1FF007CB351 /* ConferencesRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0182E2FC1C1DB1FF007CB351 /* ConferencesRequestTests.swift */; };
-		0182E2FE1C1DB221007CB351 /* ConferencesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0182E2F81C1DAE58007CB351 /* ConferencesRequest.swift */; };
-		0182E2FF1C1DB224007CB351 /* Requestable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0182E2F51C1DAC34007CB351 /* Requestable.swift */; };
 		0187C2201C1A2055007CB351 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0187C21F1C1A2055007CB351 /* Event.swift */; };
 		0187C2221C1A21A5007CB351 /* Conference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0187C2211C1A21A5007CB351 /* Conference.swift */; };
-		0187C2251C1A22C9007CB351 /* DownloadConferencesOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0187C2241C1A22C9007CB351 /* DownloadConferencesOperation.swift */; };
-		0187C2271C1A27AA007CB351 /* Downloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0187C2261C1A27AA007CB351 /* Downloader.swift */; };
 		01A00E731C1DB86D007CB351 /* DownloaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A00E721C1DB86D007CB351 /* DownloaderTests.swift */; };
-		01A00E741C1F1030007CB351 /* Downloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0187C2261C1A27AA007CB351 /* Downloader.swift */; };
-		01A00E751C1F1034007CB351 /* DownloadConferencesOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0187C2241C1A22C9007CB351 /* DownloadConferencesOperation.swift */; };
 		01A00E761C1F137F007CB351 /* Conference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0187C2211C1A21A5007CB351 /* Conference.swift */; };
 		01ADD2CF1C240FFF007CB351 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0187C21F1C1A2055007CB351 /* Event.swift */; };
-		01B5D8F81BD66CF5007CB351 /* SettingsExport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B5D8F71BD66CF5007CB351 /* SettingsExport.swift */; };
 		1624207F23C9E27100F7922A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1624207E23C9E27100F7922A /* ContentView.swift */; };
 		1624208123C9E2B300F7922A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1624208023C9E2B300F7922A /* LaunchScreen.storyboard */; };
 		1624208223C9E3DA00F7922A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1624208023C9E2B300F7922A /* LaunchScreen.storyboard */; };
 		1624208323C9E4D900F7922A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1624207E23C9E27100F7922A /* ContentView.swift */; };
 		1624208623C9ECEF00F7922A /* CCC_TV.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1624208423C9ECEF00F7922A /* CCC_TV.xcdatamodeld */; };
+		1624210223C9F4BC00F7922A /* Just.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1624210123C9F4BC00F7922A /* Just.framework */; };
+		1624210323C9F4BC00F7922A /* Just.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1624210123C9F4BC00F7922A /* Just.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1624218123CA19BE00F7922A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1624218023CA19BE00F7922A /* SceneDelegate.swift */; };
 		1635336723C9DC7000403F93 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1635336623C9DC7000403F93 /* SwiftyJSON.framework */; };
 		1635336823C9DC7000403F93 /* SwiftyJSON.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1635336623C9DC7000403F93 /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
@@ -92,6 +70,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				1624210323C9F4BC00F7922A /* Just.framework in Embed Frameworks */,
 				1635336823C9DC7000403F93 /* SwiftyJSON.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -100,33 +79,26 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		01017D161C1F37FF007CB351 /* ConferencesExport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConferencesExport.swift; path = Exports/ConferencesExport.swift; sourceTree = "<group>"; };
-		01017D181C1F3ECE007CB351 /* LogExporter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LogExporter.swift; path = Exports/LogExporter.swift; sourceTree = "<group>"; };
 		010A4AF61C246B25007CB351 /* CCCtv (Production).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CCCtv (Production).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		010BAB5A1BCC7032007CB351 /* CCCtv.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CCCtv.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		010BAB5D1BCC7032007CB351 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = AppDelegate.swift; sourceTree = "<group>"; };
 		010BAB671BCC7032007CB351 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		010BAB691BCC7032007CB351 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		010F19121C241D8D007CB351 /* CensoredEvents.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CensoredEvents.swift; path = Censor/CensoredEvents.swift; sourceTree = "<group>"; };
-		01489CD11C21B2DD007CB351 /* EventsRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EventsRequest.swift; path = NetworkOperations/Requests/EventsRequest.swift; sourceTree = "<group>"; };
 		01489CD41C21B797007CB351 /* EventsRequestTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EventsRequestTests.swift; path = NetworkOperations/Requests/EventsRequestTests.swift; sourceTree = "<group>"; };
-		01489CD61C21B871007CB351 /* DownloadEventsOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DownloadEventsOperation.swift; path = NetworkOperations/DownloadEventsOperation.swift; sourceTree = "<group>"; };
 		01733F4B1C1A1425007CB351 /* CCCtv.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CCCtv.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		01733F4D1C1A1425007CB351 /* CCC_TV_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCC_TV_Tests.swift; sourceTree = "<group>"; };
 		01733F4F1C1A1425007CB351 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		01733F561C1A185A007CB351 /* SettingsExportTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingsExportTest.swift; path = Exports/SettingsExportTest.swift; sourceTree = "<group>"; };
-		0182E2F51C1DAC34007CB351 /* Requestable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Requestable.swift; sourceTree = "<group>"; };
-		0182E2F81C1DAE58007CB351 /* ConferencesRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConferencesRequest.swift; path = NetworkOperations/Requests/ConferencesRequest.swift; sourceTree = "<group>"; };
 		0182E2FC1C1DB1FF007CB351 /* ConferencesRequestTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConferencesRequestTests.swift; path = NetworkOperations/Requests/ConferencesRequestTests.swift; sourceTree = "<group>"; };
 		0187C21F1C1A2055007CB351 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Event.swift; path = media.ccc/Event.swift; sourceTree = "<group>"; };
 		0187C2211C1A21A5007CB351 /* Conference.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Conference.swift; path = media.ccc/Conference.swift; sourceTree = "<group>"; };
-		0187C2241C1A22C9007CB351 /* DownloadConferencesOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DownloadConferencesOperation.swift; path = NetworkOperations/DownloadConferencesOperation.swift; sourceTree = "<group>"; };
-		0187C2261C1A27AA007CB351 /* Downloader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Downloader.swift; path = NetworkOperations/Downloader.swift; sourceTree = "<group>"; };
 		01A00E721C1DB86D007CB351 /* DownloaderTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DownloaderTests.swift; path = NetworkOperations/DownloaderTests.swift; sourceTree = "<group>"; };
-		01B5D8F71BD66CF5007CB351 /* SettingsExport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingsExport.swift; path = Exports/SettingsExport.swift; sourceTree = "<group>"; };
 		1624207E23C9E27100F7922A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1624208023C9E2B300F7922A /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1624208523C9ECEF00F7922A /* CCC_TV.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CCC_TV.xcdatamodel; sourceTree = "<group>"; };
+		1624210123C9F4BC00F7922A /* Just.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Just.framework; path = Carthage/Build/tvOS/Just.framework; sourceTree = "<group>"; };
+		1624218023CA19BE00F7922A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		1635336623C9DC7000403F93 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/tvOS/SwiftyJSON.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -142,6 +114,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1624210223C9F4BC00F7922A /* Just.framework in Frameworks */,
 				1635336723C9DC7000403F93 /* SwiftyJSON.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -180,12 +153,11 @@
 		010BAB5C1BCC7032007CB351 /* CCC-TV */ = {
 			isa = PBXGroup;
 			children = (
-				0187C2231C1A2275007CB351 /* NetworkOperations */,
 				0187C21E1C1A1FF9007CB351 /* media.ccc */,
 				010F19111C241ABE007CB351 /* Censor */,
-				01B5D8F91BD66CFA007CB351 /* Exports */,
 				010BAB5D1BCC7032007CB351 /* AppDelegate.swift */,
 				1624207E23C9E27100F7922A /* ContentView.swift */,
+				1624218023CA19BE00F7922A /* SceneDelegate.swift */,
 				010BAB671BCC7032007CB351 /* Assets.xcassets */,
 				1624208023C9E2B300F7922A /* LaunchScreen.storyboard */,
 				010BAB691BCC7032007CB351 /* Info.plist */,
@@ -221,15 +193,6 @@
 			name = Exports;
 			sourceTree = "<group>";
 		};
-		0182E2F71C1DAE2D007CB351 /* Requests */ = {
-			isa = PBXGroup;
-			children = (
-				0182E2F81C1DAE58007CB351 /* ConferencesRequest.swift */,
-				01489CD11C21B2DD007CB351 /* EventsRequest.swift */,
-			);
-			name = Requests;
-			sourceTree = "<group>";
-		};
 		0182E2FA1C1DB1BC007CB351 /* NetworkOperations */ = {
 			isa = PBXGroup;
 			children = (
@@ -257,31 +220,10 @@
 			name = media.ccc;
 			sourceTree = "<group>";
 		};
-		0187C2231C1A2275007CB351 /* NetworkOperations */ = {
-			isa = PBXGroup;
-			children = (
-				0187C2261C1A27AA007CB351 /* Downloader.swift */,
-				0182E2F51C1DAC34007CB351 /* Requestable.swift */,
-				0182E2F71C1DAE2D007CB351 /* Requests */,
-				0187C2241C1A22C9007CB351 /* DownloadConferencesOperation.swift */,
-				01489CD61C21B871007CB351 /* DownloadEventsOperation.swift */,
-			);
-			name = NetworkOperations;
-			sourceTree = "<group>";
-		};
-		01B5D8F91BD66CFA007CB351 /* Exports */ = {
-			isa = PBXGroup;
-			children = (
-				01B5D8F71BD66CF5007CB351 /* SettingsExport.swift */,
-				01017D161C1F37FF007CB351 /* ConferencesExport.swift */,
-				01017D181C1F3ECE007CB351 /* LogExporter.swift */,
-			);
-			name = Exports;
-			sourceTree = "<group>";
-		};
 		780357042C6BA944CACAAF59 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1624210123C9F4BC00F7922A /* Just.framework */,
 				1635336623C9DC7000403F93 /* SwiftyJSON.framework */,
 			);
 			name = Frameworks;
@@ -425,11 +367,13 @@
 			);
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/tvOS/SwiftyJSON.framework",
+				"$(SRCROOT)/Carthage/Build/tvOS/Just.framework",
 			);
 			outputFileListPaths = (
 			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/SwiftyJSON.framework",
+				"$(DERIVED_FILE_DIR)/Just.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -442,20 +386,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				010A4ADF1C246B25007CB351 /* LogExporter.swift in Sources */,
-				010A4AE01C246B25007CB351 /* ConferencesRequest.swift in Sources */,
-				010A4AE11C246B25007CB351 /* ConferencesExport.swift in Sources */,
 				1624208323C9E4D900F7922A /* ContentView.swift in Sources */,
 				010A4AE21C246B25007CB351 /* CensoredEvents.swift in Sources */,
 				010A4AE31C246B25007CB351 /* Event.swift in Sources */,
-				010A4AE41C246B25007CB351 /* Requestable.swift in Sources */,
-				010A4AE51C246B25007CB351 /* Downloader.swift in Sources */,
-				010A4AE61C246B25007CB351 /* DownloadConferencesOperation.swift in Sources */,
 				010A4AE71C246B25007CB351 /* AppDelegate.swift in Sources */,
-				010A4AE81C246B25007CB351 /* EventsRequest.swift in Sources */,
 				010A4AE91C246B25007CB351 /* Conference.swift in Sources */,
-				010A4AEA1C246B25007CB351 /* SettingsExport.swift in Sources */,
-				010A4AEC1C246B25007CB351 /* DownloadEventsOperation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -463,21 +398,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				01017D191C1F3ECE007CB351 /* LogExporter.swift in Sources */,
-				0182E2F91C1DAE58007CB351 /* ConferencesRequest.swift in Sources */,
-				01017D171C1F37FF007CB351 /* ConferencesExport.swift in Sources */,
 				1624207F23C9E27100F7922A /* ContentView.swift in Sources */,
+				1624218123CA19BE00F7922A /* SceneDelegate.swift in Sources */,
 				010F19131C241D8D007CB351 /* CensoredEvents.swift in Sources */,
 				0187C2201C1A2055007CB351 /* Event.swift in Sources */,
-				0182E2F61C1DAC34007CB351 /* Requestable.swift in Sources */,
-				0187C2271C1A27AA007CB351 /* Downloader.swift in Sources */,
 				1624208623C9ECEF00F7922A /* CCC_TV.xcdatamodeld in Sources */,
-				0187C2251C1A22C9007CB351 /* DownloadConferencesOperation.swift in Sources */,
 				010BAB5E1BCC7032007CB351 /* AppDelegate.swift in Sources */,
-				01489CD21C21B2DD007CB351 /* EventsRequest.swift in Sources */,
 				0187C2221C1A21A5007CB351 /* Conference.swift in Sources */,
-				01B5D8F81BD66CF5007CB351 /* SettingsExport.swift in Sources */,
-				01489CD71C21B871007CB351 /* DownloadEventsOperation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -487,18 +414,11 @@
 			files = (
 				01A00E731C1DB86D007CB351 /* DownloaderTests.swift in Sources */,
 				01733F571C1A185A007CB351 /* SettingsExportTest.swift in Sources */,
-				01A00E741C1F1030007CB351 /* Downloader.swift in Sources */,
-				0141D7CF1C1A1AE3007CB351 /* SettingsExport.swift in Sources */,
 				01489CD51C21B797007CB351 /* EventsRequestTests.swift in Sources */,
-				01489CD31C21B2DD007CB351 /* EventsRequest.swift in Sources */,
-				0182E2FE1C1DB221007CB351 /* ConferencesRequest.swift in Sources */,
-				0182E2FF1C1DB224007CB351 /* Requestable.swift in Sources */,
 				01733F4E1C1A1425007CB351 /* CCC_TV_Tests.swift in Sources */,
 				01A00E761C1F137F007CB351 /* Conference.swift in Sources */,
-				01A00E751C1F1034007CB351 /* DownloadConferencesOperation.swift in Sources */,
 				0182E2FD1C1DB1FF007CB351 /* ConferencesRequestTests.swift in Sources */,
 				01ADD2CF1C240FFF007CB351 /* Event.swift in Sources */,
-				01489CD81C21B871007CB351 /* DownloadEventsOperation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

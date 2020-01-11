@@ -1,9 +1,9 @@
 .DS_Store
-tvOS-App/CCC-TV.xcodeproj/project.xcworkspace/xcuserdata
-tvOS-App/CCC-TV.xcodeproj/xcuserdata
-tvOS-App/Build
-tvOS-App/CCC-TV/CCCtv.xcodeproj/xcuserdata
-tvOS-App/CCC-TV/CCCtv.xcodeproj/project.xcworkspace/xcuserdata
-tvOS-App/CCC-TV.xcworkspace/xcuserdata
-tvOS-App/CCC-TV/Cartfile.resolved
-tvOS-App/CCC-TV/Carthage
+CCC-TV.xcodeproj/project.xcworkspace/xcuserdata
+CCC-TV.xcodeproj/xcuserdata
+Build
+CCC-TV/CCCtv.xcodeproj/xcuserdata
+CCC-TV/CCCtv.xcodeproj/project.xcworkspace/xcuserdata
+CCC-TV.xcworkspace/xcuserdata
+CCC-TV/Cartfile.resolved
+CCC-TV/Carthage
