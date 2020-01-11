@@ -4,6 +4,10 @@
       "idiom" : "tv",
       "filename" : "02-lpaw.png",
       "scale" : "1x"
+    },
+    {
+      "idiom" : "tv",
+      "scale" : "2x"
     }
   ],
   "info" : {

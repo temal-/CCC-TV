@@ -4,6 +4,10 @@
       "idiom" : "tv",
       "filename" : "04-eyes.png",
       "scale" : "1x"
+    },
+    {
+      "idiom" : "tv",
+      "scale" : "2x"
     }
   ],
   "info" : {
