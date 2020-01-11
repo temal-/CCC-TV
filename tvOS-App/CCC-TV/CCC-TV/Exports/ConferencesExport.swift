@@ -113,7 +113,6 @@ class ConferencesExport: NSObject, ConferencesExportProtocol {
             return conferences
         } else {
             downloader.performDownload(){
-                globalJsContext?.evaluateScript("updateUI();")
                 let conferences = self.conferenceStructToObject()
                 fn.call(withArguments: conferences)
             }

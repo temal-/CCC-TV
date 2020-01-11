@@ -11,7 +11,7 @@ import Foundation
 
 var allEvents: Dictionary<Int, [Event]> = Dictionary()
 
-struct Event {
+struct Event : Hashable {
     
     var eventId: Int
     

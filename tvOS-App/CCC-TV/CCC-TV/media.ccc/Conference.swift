@@ -12,7 +12,7 @@ import Foundation
 
 var allConferences: [Conference] = []
 
-struct Conference {
+struct Conference : Hashable {
     
     var title: String = ""
 
