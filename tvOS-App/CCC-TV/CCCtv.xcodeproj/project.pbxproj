@@ -53,6 +53,7 @@
 		1624208123C9E2B300F7922A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1624208023C9E2B300F7922A /* LaunchScreen.storyboard */; };
 		1624208223C9E3DA00F7922A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1624208023C9E2B300F7922A /* LaunchScreen.storyboard */; };
 		1624208323C9E4D900F7922A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1624207E23C9E27100F7922A /* ContentView.swift */; };
+		1624208623C9ECEF00F7922A /* CCC_TV.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1624208423C9ECEF00F7922A /* CCC_TV.xcdatamodeld */; };
 		1635336723C9DC7000403F93 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1635336623C9DC7000403F93 /* SwiftyJSON.framework */; };
 		1635336823C9DC7000403F93 /* SwiftyJSON.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1635336623C9DC7000403F93 /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
@@ -125,6 +126,7 @@
 		01B5D8F71BD66CF5007CB351 /* SettingsExport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingsExport.swift; path = Exports/SettingsExport.swift; sourceTree = "<group>"; };
 		1624207E23C9E27100F7922A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1624208023C9E2B300F7922A /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1624208523C9ECEF00F7922A /* CCC_TV.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CCC_TV.xcdatamodel; sourceTree = "<group>"; };
 		1635336623C9DC7000403F93 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/tvOS/SwiftyJSON.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -187,6 +189,7 @@
 				010BAB671BCC7032007CB351 /* Assets.xcassets */,
 				1624208023C9E2B300F7922A /* LaunchScreen.storyboard */,
 				010BAB691BCC7032007CB351 /* Info.plist */,
+				1624208423C9ECEF00F7922A /* CCC_TV.xcdatamodeld */,
 			);
 			path = "CCC-TV";
 			sourceTree = "<group>";
@@ -468,6 +471,7 @@
 				0187C2201C1A2055007CB351 /* Event.swift in Sources */,
 				0182E2F61C1DAC34007CB351 /* Requestable.swift in Sources */,
 				0187C2271C1A27AA007CB351 /* Downloader.swift in Sources */,
+				1624208623C9ECEF00F7922A /* CCC_TV.xcdatamodeld in Sources */,
 				0187C2251C1A22C9007CB351 /* DownloadConferencesOperation.swift in Sources */,
 				010BAB5E1BCC7032007CB351 /* AppDelegate.swift in Sources */,
 				01489CD21C21B2DD007CB351 /* EventsRequest.swift in Sources */,
@@ -794,6 +798,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1624208423C9ECEF00F7922A /* CCC_TV.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1624208523C9ECEF00F7922A /* CCC_TV.xcdatamodel */,
+			);
+			currentVersion = 1624208523C9ECEF00F7922A /* CCC_TV.xcdatamodel */;
+			path = CCC_TV.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 010BAB521BCC7032007CB351 /* Project object */;
 }
